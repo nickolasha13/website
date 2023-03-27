@@ -2,89 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADAP</title>
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<a href="index.html"><img class="logo" src="images/logo_adap_1.png" alt="logo_adap_1"></a>
-		<nav>
-		<ul class="nav__links">
-			<li><a href="#">Продукція</a></li>
-			<li><a href="#">Наші Послуги</a></li>
-			<li><a href="#">Потфоліо</a></li>
-		</ul>
-		</nav>
-		<a href="contacts.html"><button class="cnt__button">Контакти</button></a>
-	</header>
+    <header>
+		<div class="nav__bar">
+			<a href="index.html"><img class="logo" src="images/logo_adap_1.png" alt="logo_adap_1"></a>
+			<nav>
+				<ul class="nav__links">
+					<li><a href="indevelopment.html">Продукція</a></li>
+					<li>
+						<a href="poslugi.html">Наші Послуги <i class="fas fa-caret-down"></i></a>
+						<ul class="dropdown__menu">
+							<li><a href="indevelopment.html">Шелкотрафаретний Друк</a></li>
+							<li><a href="indevelopment.html">Офсетний Друк</a></li>
+							<li><a href="indevelopment.html">Лакіровка</a></li>
+							<li><a href="indevelopment.html">Ламінація</a></li>
+							<li><a href="indevelopment.html">Додаткові Послуги</a></li>
+						</ul>
+					</li>   
+					<li><a href="portfolio.html">Потфоліо</a></li>
+				</ul>
+			</nav>
+			<a href="contacts.html"><button class="grad__button">Контакти</button></a>
+		</div>
+    </header>
 	<main class="container">
-		<div class="contact-grid">
-			<div class="contact-form">
-			<h2>Contact Us</h2>
-			<form>
-				<div class="form-group">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name">
-				</div>
-				<div class="form-group">
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email">
-				</div>
-				<div class="form-group">
-				<label for="phone">Phone:</label>
-				<input type="tel" id="phone" name="phone">
-				</div>
-				<div class="form-group">
-				<label for="message">Message:</label>
-				<textarea id="message" name="message"></textarea>
-				</div>
-				<button type="submit">Send</button>
-			</form>
+		<div class="contact__grid">
+			<div class="contact__form">
+				<h2>Зв'яжіться з нами!</h2>
+				<form>
+					<div class="form__group">
+						<label for="name">Ім'я:</label>
+						<input type="text" id="name" name="name">
+					</div>
+					<div class="form__group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email">
+					</div>
+					<div class="form__group">
+						<label for="phone">Телефон:</label>
+						<input type="tel" id="phone" name="phone">
+					</div>
+					<div class="form__group">
+						<label for="message">Повідомлення:</label>
+						<textarea id="message" name="message"></textarea>
+					</div>
+					<button class="grad__button" type="submit">Відправити!</button>
+				</form>
 			</div>
-			<div class="contact-info">
+			<div class="contact__info">
 			<h2>Контактна інформація</h2>
-			<p>123 Main St</p>
-			<p>Anytown, USA 12345</p>
-			<p>Phone: 555-555-5555</p>
-			<p>Email: info@example.com</p>
-			<img class="ctn__img" src="/images/map.png" alt="map">
+			<p>Адреса: м.Харків пл. Повстання 7/8</p>
+			<p>Телефони:</p>
+			<p>+380 (57) 714-23-55</p>
+			<p>+380 (57) 714-23-56</p>
+			<p>+380 (57) 717-03-75</p>
+			<p>Пошта: adap@adap.com.ua</p>
+			<img class="map__img" src="/images/map.png" alt="map">
 			</div>
 		</div>
 	</main>
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="footer-col">
+				<div class="footer__col">
 					<h4>ADAP</h4>
 					<ul>
-						<li><a href="#">Головна</a></li>
-						<li><a href="#">Портфоліо</a></li>
-						<li><a href="#">Наші Послуги</a></li>
-						<li><a href="#">Продукція</a></li>
+						<li><a href="index.html">Головна</a></li>
+						<li><a href="portfolio.html">Портфоліо</a></li>
+						<li><a href="poslugi.html">Наші Послуги</a></li>
+						<li><a href="indevelopment.html">Продукція</a></li>
 					</ul>
 				</div>
-				<div class="footer-col">
+				<div class="footer__col">
 					<h4>Наші Послуги</h4>
 					<ul>
-						<li><a href="#">Шелкотрафаретний Друк</a></li>
-						<li><a href="#">Офсетний Друк</a></li>
-						<li><a href="#">Лакіровка</a></li>
-						<li><a href="#">Ламінація</a></li>
-						<li><a href="#">Додаткові Послуги</a></li>
+						<li><a href="indevelopment.html">Шелкотрафаретний Друк</a></li>
+						<li><a href="indevelopment.html">Офсетний Друк</a></li>
+						<li><a href="indevelopment.html">Лакіровка</a></li>
+						<li><a href="indevelopment.html">Ламінація</a></li>
+						<li><a href="indevelopment.html">Додаткові Послуги</a></li>
 					</ul>
 				</div>
-				<div class="footer-col">
+				<div class="footer__col">
 					<h4>Контакти</h4>
 					<ul>
-						<li><a href="#">Адреса: м.Харків вул. Богдана Хмельницького 31</a></li>
-						<li><a href="#">
-							<p>Тел: +380 (57) 714-23-55 |</p>
-							<p>+380 (57) 714-23-56 |</p>
+						<li><p>Адреса: м.Харків пл. Повстання 7/8
+
+						</p></li>
+						<li>
+							<p>Телефони:</p>
+							<p>+380 (57) 714-23-55</p>
+							<p>+380 (57) 714-23-56</p>
 							<p>+380 (57) 717-03-75</p>
-						</a></li>
-						<li><a href="#">Пошта: adap@adap.com.ua</a></li>
+						</li>
+						<li><p>Пошта: adap@adap.com.ua</p></li>
 					</ul>
 				</div>
 			</div>

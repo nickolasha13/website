@@ -284,7 +284,7 @@ h1::after {
     width: 550px;
     height: 400px;
     position: relative;
-    transition: 1s;
+    transition: 0.3s ease-in-out;
 }
 
 .grid__box img {
@@ -301,7 +301,7 @@ h1::after {
 }
 
 .grid__box:hover {
-    transform: scale(1.3);
+    transform: scale(1.05);
     z-index: 2;
 }
 
